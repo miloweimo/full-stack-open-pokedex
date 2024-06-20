@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: ls
+        run: pwd && ls -lah
       - name: npm install
         run: npm install
       - name: lint
