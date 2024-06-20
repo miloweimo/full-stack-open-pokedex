@@ -12,3 +12,15 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+  echo_date_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: 现在时间是
+        run: |
+          date
+  echo_ls_job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: 现在目录是
+        run: |
+          pwd && ls -al
